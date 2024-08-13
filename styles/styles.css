@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --font-primary:'Inter', sans-serif;
+    --font-color: #E5E5E5;
+    --bg-primary: #ffffff;
+    --bg-secondary: #080b2b;
+    --bg-third: #C5C5C5;
+    --color-mgray: #686c6f;
+    --color-aviso: #1e31c5;
+    --shadow-color: rgba(0, 0, 0, 0, 0.8);
+    --font-colorblue: #D8DFE8;
+    --shadow-color2: #343F40;
+    --font-color2: #495057;
+}
+
+/* =============================== Global ==================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    text-decoration: none;
+}
+
+::selection{
+    background: var(--bg-secondary);
+    color: var(--font-color);
+}
+
+body{
+    height: 100%;
+    background-color: transparent;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* =============================== Header ==================================*/
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+/* =============================== Section 1 ==================================*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    background: url(../assets/portada1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.main__section{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.main__section__encrypt{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    outline: none;
+    border: var(--bg-third);
+    border-radius: 20px;
+    resize: none;
+    text-indent: 15px;
+}
+
+.main__section__encrypt::placeholder, :focus{
+    color: var(--bg-secondary);
+    opacity: 80%;
+}
+
+.main__section__aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.main__section__aviso__text{
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-mgray);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--bg-secondary);
+}
+
+.main__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position:absolute;
+    top: 526px;
+    background: transparent;
+}
+
+.main__buttons__encrypt{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--font-color);
+    background: var(--bg-secondary);
+    border: 1px solid var(--bg-secondary);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--shadow-color);
+}
+
+.main__buttons__encrypt:active{
+    box-shadow: inset 2px 2px 4px var(--font-color), inset -3px -4px 8px var(--bg-secondary);
+    color: var(--font-colorblue);
+}
+
+.main__buttons__dencrypt{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--font-colorblue);
+    border: 1px solid var(--bg-secondary);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--shadow-color);
+}
+
+.main__section2__card__copybutton:active,
+.main__buttons__dencrypt:active{
+    box-shadow: inset 2px 2px 4px var(--bg-secondary), inset -3px -4px 8px var(--font-color);
+    color: var(--bg-secondary);
+}
+
+/* =============================== Section 2  ==================================*/
+
+.main__section2{
+    width: 270px;
+    height: 580px;
+    background: var(--font-color);
+    box-shadow: 10px 24px 32px -8px var(--shadow-color2);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main__section2__card{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--font-color);
+}
+
+.main__section2__card__img{
+    background: var(--font-color);
+
+}
+
+.main__section2__card__text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-mgray);
+    background: var(--font-color);
+}
+
+.main__section2__card__text2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-mgray);
+    background: var(--font-color);
+}
+
+.main__section2__card__test{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--font-color2);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    resize: none;
+    border:none;
+}
+
+.main__section2__card__copybutton{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    visibility: hidden;
+    background: var(--font-colorblue);
+    border: 1px solid var(--bg-secondary);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main__buttons__encrypt:hover,
+.main__buttons__dencrypt:hover,
+.main__section2__card__copybutton:hover{
+    transform: scale(0.97);
+}
+
+/* =============================== Footer  ==================================*/
+
+footer{
+    padding: 10px;
+    border-top: 2px solid var(--font-color);
+    color: var(--font-color2);
+    text-align: center;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.footer__img:hover{
+    color: var(--font-color);
+    opacity: 0.8;
+}
+
+.footer__img2:hover{
+    color: var(--font-color);
+    opacity: 0.6;
+}
+
+/* =============================== Media Queries  ==================================*/
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main__section{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main__buttons{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .main__section__aviso{
+        position: inherit;
+        margin: 15px;
+    }    
+
+    .main__section2{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .main__section2__card{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 600 ;
+    }
+
+    .main__section2__card__img{
+        display: none;
+    }
+
+    .main__section2__card__copybutton{
+        position: inherit;
+        width: 100%;
+    }
+
+    .main__section2__card__test{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+    
+}
+
+@media(max-width: 720px){
+ 
+    .header__logo{
+        width: 100%;
+        padding: 2px;
+        background: transparent;
+    }
+
+    main{
+        overflow: scroll;
+    }
+
+    .main__section{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .main__buttons{
+        display: grid;
+        gap: 21px;
+    }
+
+    .main__section2{
+        width: 90%;
+    }
+
+    .copyright{
+        font-size: 20px;
+    }
+
+    .main__section__encrypt{
+        width: 100%;
+    }
+
+    
+}
+

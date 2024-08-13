@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Encriptador de Textos</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/favico.svg">
+</head>
+<body>
+    <header>
+        <a href="https://www.aluracursos.com/" rel="" target="_blank">
+            <img src="./assets/logo.svg" alt="logo Alura" class="header__logo">
+        </a>
+    </header>
+    <main class="main">
+        
+        <section class="main__section">
+            <textarea class="main__section__encrypt" placeholder=" Ingrese su texto aqui."></textarea>
+            <div class="main__section__aviso">
+                <img src="./assets/aviso.svg" alt="Aviso" class="main__section__aviso__img">
+                <p class="main__section__aviso__text">Solo letras minúsculas y sin tilde.</p>
+            </div>
+            <div class="main__buttons">
+                <button type="submit" class="main__buttons__encrypt">Encriptar</button>
+                <button type="submit" class="main__buttons__dencrypt">Desencriptar</button>
+            </div>
+        </section>
+        <section class="main__section2">
+            <div class="main__section2__card">
+                <img class="main__section2__card__img" src="./assets/muñeco.svg" alt="Result">
+                <p class="main__section2__card__text">No se ha encontrado ningún mensaje.</p>
+                <p class="main__section2__card__text2">Ingrese el texto que desee encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="main__section2__card__test" readonly></textarea>
+            <button type="submit" class="main__section2__card__copybutton">Copiar</button>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - Desarrollado por Lucas Moyano</p>
+        <a href="https://www.linkedin.com/in/lumo7/" target="_blank">
+            <img src="./assets/linkedin.svg" alt="linkedin" class="footer__img">
+        </a>
+        <a href="https://github.com/lmoyano21" target="_blank">
+            <img src="./assets/github.svg" alt="github" class="footer__img2">
+        </a>
+    </footer>
+    
+    <script src="/js/App.js"></script>
+</body>
+
+</html>
