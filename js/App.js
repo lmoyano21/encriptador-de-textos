@@ -42,7 +42,7 @@ btnEncrypt.addEventListener("click", e=>{
       card.style.visibility = 'hidden';
       answr.innerHTML = text;
       btnCopy.style.visibility = 'visible';
-
+      textEncrypt.value = '';
 
 });
 
